@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7988411238452774624, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_Name
-      value: Ball (3)
+      value: Blue Ball
       objectReference: {fileID: 0}
     - target: {fileID: 7988411238452774628, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_RootOrder
@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988411238452774630, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 418fce60b5cdfc84e849f74d22c6fbc7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
 --- !u!1 &668728294
@@ -284,7 +288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7988411238452774624, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_Name
-      value: Ball (4)
+      value: Black Ball
       objectReference: {fileID: 0}
     - target: {fileID: 7988411238452774628, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_RootOrder
@@ -330,6 +334,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988411238452774630, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: afb661af6c7f814428479614956bda03, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
 --- !u!1 &705507993
@@ -517,7 +525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7988411238452774624, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_Name
-      value: Ball (2)
+      value: White Ball
       objectReference: {fileID: 0}
     - target: {fileID: 7988411238452774628, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_RootOrder
@@ -563,6 +571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988411238452774630, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dcbcd93a92f3c446adc5c6a8052c58f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
 --- !u!1001 &1141890146
@@ -574,7 +586,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7988411238452774624, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_Name
-      value: Ball (1)
+      value: Red Ball
       objectReference: {fileID: 0}
     - target: {fileID: 7988411238452774628, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_RootOrder
@@ -620,6 +632,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988411238452774630, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6668523d07b91d541907b9b005bc481b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
 --- !u!1001 &7988411237638384258
@@ -631,7 +647,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7988411238452774624, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_Name
-      value: Ball
+      value: Green Ball
       objectReference: {fileID: 0}
     - target: {fileID: 7988411238452774628, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
       propertyPath: m_RootOrder
@@ -677,5 +693,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988411238452774630, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dd101fa03fa2b148b47f5dc16b97e5b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459062168f9ef6a4babbb22b6f1586ed, type: 3}
