@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -26,10 +24,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Maze", LoadSceneMode.Single);
     }
 
-    // Print "Quit Game" in the debug console
+    // Quit the application
     public void QuitMaze()
     {
-        Debug.Log("Quit Game");
         Application.Quit();
     }
 }

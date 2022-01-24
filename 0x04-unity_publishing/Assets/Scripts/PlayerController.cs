@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,8 +11,8 @@ public class PlayerController : MonoBehaviour
     public int health = 5; //health of the ball
     public Text scoreText; // score text
     public Text healthText; //health text
-    public Text WinLoseT; //win or lose text
-    public Image WinLoseBG; //win or lose background color
+    public Image WinBG; //Win image
+    public Image LoseBG; //Lose image
 
     //excecution of the movement of the ball once per frame
     //Input.GetKey = receives the Key od the movement(WASD)
@@ -36,23 +35,17 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Pickup")
         {
             score++;
-            //Debug.Log ("Score: " + score);
             SetScoreText();
             Destroy(other.gameObject);
         }
         if (other.tag == "Trap")
         {
             health--;
-            //Debug.Log ("Health " + health);
             SetHealthText();
         }
-        if (other.tag == "Goal")
+        if (other.tag == "Goal" && score == 20)
         {
-            //Debug.Log ("You Win!");
-            WinLoseT.text = "You Win!";
-            WinLoseBG.color = Color.green;
-            WinLoseT.color = Color.black;
-            WinLoseBG.gameObject.SetActive(true);
+            WinBG.gameObject.SetActive(true);
             StartCoroutine(LoadScene(3));
         }
     }
@@ -66,11 +59,7 @@ public class PlayerController : MonoBehaviour
         }
         if (health == 0)
         {
-            //Debug.Log ("Game Over!");
-            WinLoseT.text = "Game Over!";
-            WinLoseBG.color = Color.red;
-            WinLoseT.color = Color.white;
-            WinLoseBG.gameObject.SetActive(true);
+            LoseBG.gameObject.SetActive(true);
             StartCoroutine(LoadScene(3));
             health = 5;
             score = 0;
@@ -80,13 +69,13 @@ public class PlayerController : MonoBehaviour
     // Update the score (count) text
     void SetScoreText()
     {
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = score.ToString();
     }
 
     // Update the healt (count) text
     void SetHealthText()
     {
-        healthText.text = "Health: " + health.ToString();
+        healthText.text = health.ToString();
     }
 
     // Reload the maze scene after 3 seconds of being called
