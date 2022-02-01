@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class WinTrigger : MonoBehaviour
 {
     public Text timerText;
+
+    // When a GameObject collides with another GameObject, Unity calls OnTriggerEnter
     void OnTriggerEnter(Collider other)
     {
         if (other.name == "Player")

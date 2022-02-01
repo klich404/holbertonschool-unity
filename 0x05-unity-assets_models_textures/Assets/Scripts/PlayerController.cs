@@ -12,12 +12,15 @@ public class PlayerController : MonoBehaviour
     float vertical;
     Vector3 move = Vector3.zero;
 
+    // Is called when the script instance is being loaded
     void Awake()
     {
+        Cursor.visible = false;
         player = GetComponent<CharacterController>();
         p2 = GetComponent<Transform>();
     }
 
+    // Update is called once per frame
     void Update()
     {
         vertical = move.y;
