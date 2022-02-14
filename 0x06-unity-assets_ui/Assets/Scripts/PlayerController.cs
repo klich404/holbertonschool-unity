@@ -48,7 +48,5 @@ public class PlayerController : MonoBehaviour
         player.Move(move * Time.deltaTime);
         if (p2.position.y < -30.0f)
             p2.position = new Vector3(0, 10, 0);
-        if (Input.GetKey("escape"))
-            Application.Quit();
     }
 }
