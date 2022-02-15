@@ -8,6 +8,6 @@ public class OptionsMenu : MonoBehaviour
 {
     public void Back()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetString("previous_scene"));
+        SceneManager.LoadScene(PlayerPrefs.GetString("PreviousScene"));
     }
 }
