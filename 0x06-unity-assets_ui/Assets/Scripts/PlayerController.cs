@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     // Is called when the script instance is being loaded
     void Awake()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
         player = GetComponent<CharacterController>();
         p2 = GetComponent<Transform>();
     }

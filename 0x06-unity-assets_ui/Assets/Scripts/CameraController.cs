@@ -10,6 +10,17 @@ public class CameraController : MonoBehaviour
     public float speedCamera = 3f; 
     Quaternion vertical;
     Quaternion horizontal;
+    public bool isInverted;
+    private Transform transf;
+
+    void Awake()
+    {
+        if (PlayerPrefs.GetInt("Y", 0) == 0)
+            isInverted = false;
+        else
+            isInverted = true;
+        transf = GetComponent<Transform>(); 
+    }
 
     void Start()
     {
@@ -22,7 +33,10 @@ public class CameraController : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             horizontal = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speedCamera, Vector3.up);
-            vertical = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * speedCamera, Vector3.left);
+            if (isInverted == true)
+                vertical = Quaternion.AngleAxis(-1 * (Input.GetAxis("Mouse Y") * speedCamera), Vector3.left);
+            else
+                vertical = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * speedCamera, Vector3.left);
             offset = horizontal * vertical * offset;
         }
             transform.position = player.position + offset;
