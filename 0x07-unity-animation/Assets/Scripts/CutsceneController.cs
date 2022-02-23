@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class CutsceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Animator anim;
+    public GameObject mainCamera;
+    public GameObject player;
+    public GameObject timerCanvas;
+    public GameObject cutCamera;
+
+    void Awake()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void transition()
     {
-        
+        mainCamera.SetActive(true);
+        timerCanvas.SetActive(true);
+        player.gameObject.GetComponent<PlayerController>().enabled = true;
+        cutCamera.SetActive(false);
     }
 }
