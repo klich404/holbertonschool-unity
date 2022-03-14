@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.59053785, g: 0.396132, b: 0.6245467, a: 1}
+  m_IndirectSpecularColor: {r: 0.5905447, g: 0.396132, b: 0.6245573, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 613533781}
   - component: {fileID: 613533780}
   - component: {fileID: 613533779}
+  - component: {fileID: 613533782}
   m_Layer: 5
   m_Name: Level03
   m_TagString: Untagged
@@ -454,6 +455,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613533777}
   m_CullTransparentMesh: 1
+--- !u!114 &613533782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613533777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01032797be1fa5043a7745f6f4117090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 311bebefa4024f743a55b3d136b9b8ba, type: 3}
 --- !u!1 &800248747
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +602,7 @@ GameObject:
   - component: {fileID: 1000112649}
   - component: {fileID: 1000112648}
   - component: {fileID: 1000112647}
+  - component: {fileID: 1000112650}
   m_Layer: 5
   m_Name: Level02
   m_TagString: Untagged
@@ -708,6 +723,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000112645}
   m_CullTransparentMesh: 1
+--- !u!114 &1000112650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000112645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01032797be1fa5043a7745f6f4117090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 311bebefa4024f743a55b3d136b9b8ba, type: 3}
 --- !u!1 &1034857917
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +748,7 @@ GameObject:
   - component: {fileID: 1034857921}
   - component: {fileID: 1034857920}
   - component: {fileID: 1034857919}
+  - component: {fileID: 1034857922}
   m_Layer: 5
   m_Name: Level01
   m_TagString: Untagged
@@ -840,6 +869,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034857917}
   m_CullTransparentMesh: 1
+--- !u!114 &1034857922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034857917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01032797be1fa5043a7745f6f4117090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 311bebefa4024f743a55b3d136b9b8ba, type: 3}
 --- !u!224 &1035734546 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6681975608951900087, guid: 5f2e2e912a475e9438a7b8bae61d96a3, type: 3}
@@ -920,6 +962,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384235104}
   m_CullTransparentMesh: 1
+--- !u!1 &1389306232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6681975608951900084, guid: 5f2e2e912a475e9438a7b8bae61d96a3, type: 3}
+  m_PrefabInstance: {fileID: 6681975608607181221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389306236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389306232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01032797be1fa5043a7745f6f4117090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 311bebefa4024f743a55b3d136b9b8ba, type: 3}
 --- !u!1 &1437443710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1122,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452025916}
   m_CullTransparentMesh: 1
+--- !u!1 &1455696585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3772268067832638770, guid: 77855f45ed6ac464b92cddf80b16e98c, type: 3}
+  m_PrefabInstance: {fileID: 5612305555284508233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455696589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455696585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01032797be1fa5043a7745f6f4117090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 311bebefa4024f743a55b3d136b9b8ba, type: 3}
 --- !u!1 &1535609767
 GameObject:
   m_ObjectHideFlags: 0
