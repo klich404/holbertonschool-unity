@@ -5,17 +5,15 @@ using UnityEngine.UI;
 
 public class ButtonSFX : MonoBehaviour
 {
-    public AudioSource source {get{return GetComponent<AudioSource> ();}}
-    public Button btn {get{return GetComponent<Button> ();}}
+    public AudioSource source;
     public AudioClip clip;
 
     void Start()
     {
-        gameObject.AddComponent<AudioSource> ();
-        btn.onClick.AddListener (PlaySound);
+        source.clip = clip; 
     }
 
-    void PlaySound()
+    public void PlaySound()
     {
         source.PlayOneShot(clip);
     }
