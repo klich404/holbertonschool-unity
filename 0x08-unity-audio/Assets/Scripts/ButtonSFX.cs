@@ -10,7 +10,7 @@ public class ButtonSFX : MonoBehaviour
 
     void Start()
     {
-        source.clip = clip; 
+        source.clip = clip;
     }
 
     public void PlaySound()
