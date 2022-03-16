@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private float fall = 0f;
     private float vertical;
+    private string surface;
     public Transform cam;
     public float speed = 10f;
     public float jump = 13f;
@@ -25,6 +24,14 @@ public class PlayerController : MonoBehaviour
         p2 = GetComponent<Transform>();
         ty = p2.Find("ty");
         anim = ty.GetComponent<Animator>();
+    }
+
+    void IdentifySurface(Collision other)
+    {
+        if (other.collider.tag == "stone")
+            surface = "stone";
+        else
+            surface = "Grass";
     }
 
     // Update is called once per frame
@@ -57,6 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             fall += Time.deltaTime;
             anim.SetBool("Grounded", false);
+            surface = "";
         }
         if (move != Vector3.zero)
         {
@@ -76,5 +84,14 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Fall", fall);
         if (p2.position.y < -30.0f)
             p2.position = new Vector3(0, 20, 0);
+    }
+
+    public string surfaceType()
+    {
+        return surface;
+    }
+    public bool onGround()
+    {
+        return player.isGrounded;
     }
 }
