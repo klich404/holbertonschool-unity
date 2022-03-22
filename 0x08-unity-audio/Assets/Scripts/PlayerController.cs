@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
 
     void IdentifySurface(Collision other)
     {
-        if (other.collider.tag == "stone")
-            surface = "stone";
+        if (other.collider.tag == "Stone")
+            surface = "Stone";
         else
             surface = "Grass";
     }
@@ -90,6 +90,7 @@ public class PlayerController : MonoBehaviour
     {
         return surface;
     }
+
     public bool onGround()
     {
         return player.isGrounded;

@@ -6809,6 +6809,7 @@ GameObject:
   - component: {fileID: 1429553008}
   - component: {fileID: 1429553006}
   - component: {fileID: 1429553009}
+  - component: {fileID: 1429553011}
   - component: {fileID: 1429553010}
   m_Layer: 0
   m_Name: Player
@@ -7054,6 +7055,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1429553011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429553001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b76f969b72e5f4cb09642f6f6f09fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassStepSFX: {fileID: 8300000, guid: 019062bdd87e6f14085d35fda3f6e362, type: 3}
+  rockStepSFX: {fileID: 8300000, guid: 7bf335d601c53ec448e80e071977df0f, type: 3}
+  grassLandingSFX: {fileID: 8300000, guid: c55330595d49ac94b845069ba61664c8, type: 3}
+  rockLandingSFX: {fileID: 8300000, guid: 28a9951e3c31b9f42b937645dfec6bd1, type: 3}
+  player: {fileID: 1429553001}
 --- !u!4 &1434935917 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3787107918d5db246bf220bc65231d6d, type: 3}
